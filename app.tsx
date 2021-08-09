@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import App from "./src/App";
 // import "babel-polyfill";
-ReactDom.render(
+ReactDom.hydrate(
   // <Provider store={store}>
   <Router>
     <App />

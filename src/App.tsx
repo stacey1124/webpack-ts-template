@@ -4,10 +4,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 export default () => (
   <div>
-    <Router>
+    {/* <Router> */}
+    <Route>
       <Switch>
         <Route path="/" exact component={App}></Route>
       </Switch>
-    </Router>
+    </Route>
+    {/* </Router> */}
   </div>
 );
