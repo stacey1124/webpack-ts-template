@@ -15,11 +15,6 @@ ReactDom.hydrate(
         <Route path="/about/" component={About}></Route>
         <Route path="/form-table/" component={FormTable}></Route>
         <Route path="/hocs" component={WithWrapper}></Route>
-        <Route path="/usecontext/" component={TestUseContext}></Route>
-        <Route path="/comment/" component={Comment}></Route>
-        <Route path="/useHooks/" component={AboutUseHooks}></Route>
-        <Route path="/useRef/" component={AboutUseRef}></Route>
-        <Route path="/useReducer/" component={BrowserHitoryLayout}></Route>
       </Switch> */}
   </Router>,
   // </Provider>,

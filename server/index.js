@@ -3,15 +3,21 @@ import path from "path";
 import express from "express";
 
 import React from "react";
-import { StaticRouter, BrowserRouter as Router } from "react-router-dom";
+import {
+  StaticRouter,
+  BrowserRouter as Router,
+  matchPath,
+} from "react-router-dom";
 import { renderToString } from "react-dom/server";
 import App from "../src/App.tsx";
+import routes from "../src/routes";
 
 const app = express();
 
 app.get("/*", (req, res) => {
+  const currentRoute = routes.find((route) => matchPath(req.url, route) || {});
   const renderedString = renderToString(
-    <StaticRouter>
+    <StaticRouter location={req.url}>
       <App></App>
     </StaticRouter>
   );

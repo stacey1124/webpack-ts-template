@@ -17,7 +17,7 @@ class App extends React.Component<IProps, IState> {
       <div>
         <ul>
           <li>
-            <Link to="/about/">1、关于</Link>
+            <Link to="/home/">1、跳转到主页面</Link>
           </li>
         </ul>
       </div>
