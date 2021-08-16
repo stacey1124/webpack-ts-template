@@ -37,19 +37,19 @@ module.exports = {
     // Add '.ts' and '.tsx' as resolvable extensions.
     extensions: [".ts", ".tsx", ".js", ".json"],
   },
-  // devServer: {
-  //   hot: true, // 热替换
-  //   contentBase: path.join(__dirname, "dist"), // server文件的根目录
-  //   compress: true, // 开启gzip
-  //   host: "127.0.0.1",
-  //   port: 8080, // 端口
-  //   historyApiFallback: true,
-  // },
   devServer: {
-    host: "localhost",
-    port: 8080,
-    open: true,
+    hot: true, // 热替换
+    contentBase: path.join(__dirname, "dist"), // server文件的根目录
+    compress: true, // 开启gzip
+    host: "127.0.0.1",
+    port: 8080, // 端口
+    historyApiFallback: true,
   },
+  // devServer: {
+  //   host: "localhost",
+  //   port: 8080,
+  //   open: true,
+  // },
   plugins: [
     new webpack.HotModuleReplacementPlugin(), // HMR允许在运行时更新各种模块，而无需进行完全刷新
     new HtmlWebPackPlugin({

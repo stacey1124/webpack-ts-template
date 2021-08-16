@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import App from "./views";
 import { Home } from "./views/HomeLayout";
+import { UploadImage } from "./views/upload";
 
 export default () => (
   <div>
@@ -13,6 +14,7 @@ export default () => (
       <Switch>
         <Route path="/" exact component={App}></Route>
         <Route path="/home/" component={Home}></Route>
+        <Route path="/upload/image" component={UploadImage}></Route>
       </Switch>
     </Route>
     {/* </Router> */}

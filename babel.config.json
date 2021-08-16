@@ -1,4 +1,14 @@
 {
   "presets": ["@babel/preset-react", "@babel/preset-env"],
-  "plugins": ["@babel/plugin-transform-react-jsx"]
+  "plugins": [
+    "@babel/plugin-transform-react-jsx",
+    // yarn add babel-plugin-import 按需引入antd样式
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": "css"
+      }
+    ]
+  ]
 }

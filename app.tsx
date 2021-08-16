@@ -9,13 +9,9 @@ import App from "./src/App";
 ReactDom.hydrate(
   // <Provider store={store}>
   <Router>
+    {/* <Route> */}
     <App />
-    {/* <Switch>
-        <Route path="/" exact component={App}></Route>
-        <Route path="/about/" component={About}></Route>
-        <Route path="/form-table/" component={FormTable}></Route>
-        <Route path="/hocs" component={WithWrapper}></Route>
-      </Switch> */}
+    {/* </Route>, */}
   </Router>,
   // </Provider>,
   document.getElementById("root")

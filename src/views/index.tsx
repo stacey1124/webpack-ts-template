@@ -19,6 +19,9 @@ class App extends React.Component<IProps, IState> {
           <li>
             <Link to="/home/">1、跳转到主页面</Link>
           </li>
+          <li>
+            <Link to="/upload/image">2、图像上传</Link>
+          </li>
         </ul>
       </div>
     );
