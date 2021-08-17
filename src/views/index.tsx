@@ -22,6 +22,9 @@ class App extends React.Component<IProps, IState> {
           <li>
             <Link to="/upload/image">2、图像上传</Link>
           </li>
+          <li>
+            <Link to="/scrollInto">3、scroll</Link>
+          </li>
         </ul>
       </div>
     );
