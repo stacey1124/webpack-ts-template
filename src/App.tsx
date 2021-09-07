@@ -4,6 +4,8 @@ import App from "./views";
 import { Home } from "./views/HomeLayout";
 import { UploadImage } from "./views/upload";
 import { ScrollInto } from "./views/scroll-into";
+import { TestAxios } from "./views/test-axios";
+import { GroupItems } from "./views/groupItems";
 
 export default () => (
   <div>
@@ -17,6 +19,8 @@ export default () => (
         <Route path="/home/" component={Home}></Route>
         <Route path="/upload/image" component={UploadImage}></Route>
         <Route path="/scrollInto" component={ScrollInto}></Route>
+        <Route path="/testAxios" component={TestAxios}></Route>
+        <Route path="/groupItems" component={GroupItems}></Route>
       </Switch>
     </Route>
     {/* </Router> */}
